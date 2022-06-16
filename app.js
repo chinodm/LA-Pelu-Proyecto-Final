@@ -23,16 +23,19 @@ let productos = [
 
 let shop = [];
 
-seleccion = prompt("Desea comprar algo si o no");
+//seleccion = prompt("Desea comprar algo si o no");
+seleccion = prompt("Bienvenido, hoy va a comprar?");
 while (seleccion != "no") {
     let producto = prompt("agrega un producto a tu shop!");
     let precio = 0;
     if (
+        <ul>
         producto == "enjuague" ||
         producto == "shampoo" ||
         producto == "keratina" ||
         producto == "formol" ||
         producto == "espuma"
+        </ul>
     ) {
         switch (producto) {
         case "enjuague":
@@ -55,6 +58,7 @@ while (seleccion != "no") {
             }
             shop.push({ producto, precio });
             console.log(shop);
+            console.log(shop.join(","));
             document.write(producto, precio);
     //console.log(shop);
 } else {
