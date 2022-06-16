@@ -14,11 +14,12 @@
 // }
 
 let productos = [
-    { nombre: "enjuague", precio: 2500 },
-    { nombre: "shampoo", precio: 3500 },
+    { nombre: "enjuague", precio: 950 },
+    { nombre: "shampoo", precio: 1500 },
     { nombre: "keratina", precio: 3000 },
-    { nombre: "formol", precio: 1000 },
-    { nombre: "espuma", precio: 1900 },
+    { nombre: "formol", precio: 1800 },
+    { nombre: "espuma", precio: 700 },
+    { nombre: "oro liquido", precio: 1200 },
 ];
 
 let shop = [];
@@ -33,7 +34,8 @@ while (seleccion != "no") {
         producto == "shampoo" ||
         producto == "keratina" ||
         producto == "formol" ||
-        producto == "espuma"
+        producto == "espuma" ||
+        producto == "oro liquido"
         
     ) {
         switch (producto) {
@@ -51,6 +53,9 @@ while (seleccion != "no") {
                 break;
             case "espuma":
                 precio = 700;
+                break;
+                case "oro liquido":
+                precio = 1200;
                 break;
             default:
                 break;
