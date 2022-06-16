@@ -23,7 +23,7 @@ let productos = [
 
 let shop = [];
 
-seleccion = prompt("Desea comprar algo si o no");
+seleccion = prompt("Hoy Compramos? si o no");
 while (seleccion != "no") {
     let producto = prompt("agrega un producto a tu shop!");
     let precio = 0;
@@ -57,13 +57,12 @@ while (seleccion != "no") {
             }
             shop.push({ producto, precio });
             console.log(shop);
-            console.log(shop.join(","));
             document.write(producto, precio);
-    //console.log(shop);
+    
 } else {
-    alert("no tenemos ese producto");
+    alert("producto inexistente");
 }
-seleccion = prompt("quiere seguir comprando si o no");
+seleccion = prompt("queres seguir comprando si o no");
 }
 
 const total = shop.reduce((acc, el) => acc + el.precio, 0);
