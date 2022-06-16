@@ -22,7 +22,7 @@ let productos = [
 ];
 
 let shop = [];
-
+saludo = prompt("Bienvenidos al Shop");
 seleccion = prompt("Hoy Compramos? si o no");
 while (seleccion != "no") {
     let producto = prompt("agrega un producto a tu shop!");
