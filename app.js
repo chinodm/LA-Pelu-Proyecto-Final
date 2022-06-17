@@ -70,4 +70,4 @@ while (seleccion != "no") {
 seleccion = prompt("queres seguir comprando si o no");
 }
 
-//const total = shop.reduce((acc, el) => acc + el.precio, 0);
+saludo2 = alert("Gracias por tu compra");
